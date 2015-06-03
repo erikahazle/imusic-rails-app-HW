@@ -1,0 +1,16 @@
+// Place all the styles related to the songs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#song-list-index {
+  text-align: center;
+  margin: 20px auto;
+  list-style: none;
+}
+
+.song-list-item {
+  display: inline-block;
+  width: 25%;
+  height: 70px;
+  border: 2px solid black;
+}

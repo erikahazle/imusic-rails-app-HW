@@ -27,7 +27,7 @@ end
 end
 
 Song.all.each do |song|
-  song.artist_id = Artist.all.sample
+  song.artist_id = Artist.all.sample.id
   song.save
 end
 

@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ImusicApp</title>
+  <title>iMusic</title>
+  <link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<header>
+  <nav>
+    <p id="brand-logo">iMusic</p>
+    <div class="navigation">
+      <li><%= link_to('ALBUMS', albums_path, class: 'nav-link') %></li>
+      <li><%= link_to('SONGS', songs_path, class: 'nav-link') %></li>
+      <li><%= link_to('ARTISTS', artists_path, class: 'nav-link') %></li>
+    </div>
+  </nav>
+</header>
 
 <%= yield %>
 

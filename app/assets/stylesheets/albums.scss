@@ -4,6 +4,7 @@
 
 .albums-index-wrapper {
   text-align: center;
+  margin-top: 40px;
 }
 
 .album-display-index {
@@ -16,12 +17,14 @@
   height: 250px;
   width: 250px;
   background-color: grey;
+  margin: 20px;
 }
 
 
 .album-show-left-column {
   display: inline-block;
   width: 20%;
+  height: 400px;
   text-align: center;
   border-right: 2px solid grey;
 }
@@ -29,4 +32,7 @@
 .album-show-right-column {
   display: inline-block;
   margin-left: 100px;
+  text-align: top;
+  width: 70%;
+  height: 400px;
 }

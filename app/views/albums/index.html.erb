@@ -1,7 +1,4 @@
 <div class="albums-index-wrapper">
-  <h1>See what's available on iMusic</h1>
-
-
   <% @albums.each do |album| %>
     <div class="album-display-index">
       <%= image_tag(album.cover_image, class: 'cover_image') %>
@@ -11,6 +8,7 @@
       <p>Number of songs:<%= album.songs.count %></p>
     </div>
   <% end %>
+  
 </div>
 
 
