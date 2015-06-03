@@ -1,9 +1,16 @@
-<h1>See what's available on iMusic</h1>
+<div class="albums-index-wrapper">
+  <h1>See what's available on iMusic</h1>
 
 
-<% @albums.each do |album| %>
-  <div class="album-display-index">
-    <p><%= album.name %></p>
-  </div>
-<% end %>
+  <% @albums.each do |album| %>
+    <div class="album-display-index">
+      <%= image_tag(album.cover_image, class: 'cover_image') %>
+      <%= link_to(album_path(album.id)) do %>
+        <p><%= album.name %></p>
+      <% end %>
+      <p>Number of songs:<%= album.songs.count %></p>
+    </div>
+  <% end %>
+</div>
+
 

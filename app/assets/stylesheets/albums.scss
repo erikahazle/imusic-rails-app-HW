@@ -2,7 +2,31 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.albums-index-wrapper {
+  text-align: center;
+}
+
 .album-display-index {
   display: inline-block;
   width: 25%;
+  margin: 1%;
+}
+
+.cover_image {
+  height: 250px;
+  width: 250px;
+  background-color: grey;
+}
+
+
+.album-show-left-column {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  border-right: 2px solid grey;
+}
+
+.album-show-right-column {
+  display: inline-block;
+  margin-left: 100px;
 }

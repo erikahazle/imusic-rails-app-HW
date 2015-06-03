@@ -1,2 +1,10 @@
-<h1>Albums#show</h1>
-<p>Find me in app/views/albums/show.html.erb</p>
+<div class="album-show-left-column">
+  <%= image_tag(@album.cover_image, class: 'cover_image') %>
+  <p><%= @album.name %></p>
+</div>
+
+<div class="album-show-right-column">
+  <% @album.songs.each do |song| %>
+      <p><%= song.title %></p>
+  <% end %>
+</div>

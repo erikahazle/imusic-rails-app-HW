@@ -21,7 +21,7 @@ a6 = Artist.create(name: 'Florence and the Machine')
 end
 
 # Creating songs and assigning them to artists
-20.times do |s|
+100.times do |s|
   s += 1
   Song.create(title: "I am song number #{s}", duration: '3 min 2 s')
 end
