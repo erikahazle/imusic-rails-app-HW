@@ -1,2 +1,10 @@
-<h1>Genres#index</h1>
-<p>Find me in app/views/genres/index.html.erb</p>
+<div class="genre-index-wrapper">
+  <% @genres.each do |genre| %>
+    <div class="genre-box">
+      <%= link_to genre_path(genre.id) do %>
+        <p><%= genre.name %></p>
+      <% end %>
+    </div>
+  <% end %>
+</div>
+

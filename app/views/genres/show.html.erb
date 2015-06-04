@@ -1,2 +1,9 @@
-<h1>Genres#show</h1>
-<p>Find me in app/views/genres/show.html.erb</p>
+<div class="genre-show-wrapper">
+  <h1><%= @genre.name %></h1>
+  
+    <% @genre.albums.each do |album| %>
+        <p><%= album.name %></p> 
+    <% end %>
+
+  <%= link_to('Back to genres', genres_path) %>
+</div>

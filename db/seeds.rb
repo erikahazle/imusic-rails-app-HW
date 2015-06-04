@@ -5,6 +5,7 @@ Artist.delete_all
 Song.delete_all
 Album.delete_all
 AlbumSong.delete_all
+Genre.delete_all
 
 # Creating genres
 
@@ -46,7 +47,7 @@ Song.all.each do |song|
   song.album_songs.create(album_id: album_id)
 end
 
-Albums.all.each do |album|
+Album.all.each do |album|
   album.genre_id = Genre.all.sample.id
   album.save
 end
