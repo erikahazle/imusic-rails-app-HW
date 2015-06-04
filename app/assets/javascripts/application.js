@@ -14,3 +14,12 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function() {
+  $('.genre-box').on('mouseover', function() {
+    $(this).css('background-color', 'red');
+  })
+  $('.genre-box').on('mouseleave', function() {
+    $(this).css('background-color', 'pink');
+  })
+})
