@@ -6,6 +6,15 @@ Song.delete_all
 Album.delete_all
 AlbumSong.delete_all
 
+# Creating genres
+
+g1 = Genre.create(name: 'Pop')
+g2 = Genre.create(name: 'Rock')
+g3 = Genre.create(name: "Rock 'n Roll")
+g4 = Genre.create(name: 'Country')
+g5 = Genre.create(name: 'Indie')
+g6 = Genre.create(name: 'R&B')
+
 # Creating artists
 a1 = Artist.create(name: 'Tyler Swift')
 a2 = Artist.create(name: 'Kylie Minogue')
@@ -35,6 +44,11 @@ end
 Song.all.each do |song|
   album_id = Album.all.sample.id
   song.album_songs.create(album_id: album_id)
+end
+
+Albums.all.each do |album|
+  album.genre_id = Genre.all.sample.id
+  album.save
 end
 
 puts 'Seeding done'
